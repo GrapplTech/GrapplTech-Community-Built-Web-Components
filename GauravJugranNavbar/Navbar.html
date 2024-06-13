@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="Navbar.css" rel="stylesheet">
+    <style>
+        /* Custom CSS for About Us section */
+        .modal-body p:first-of-type:first-letter,
+        .modal-body p:first-of-type span:first-of-type {
+            font-size: x-large; /* Adjust the font size as needed */
+            font-weight: bold;
+            color: #712cf9;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand custom-title" href="#">&lt;/&gt;NavBar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="about-link">About us</a>
+                    </li>
+                    
+
+                </ul>
+                <form class="d-flex ml-auto" role="search" id="search-form">
+                    <input id="search-input" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <div class="DocSearch-Button-Container" id="search-button">
+                        <svg width="20" height="20" class="DocSearch-Search-Icon" viewBox="0 0 20 20" aria-hidden="true">
+                            <path d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                        <span class="DocSearch-Button-Placeholder">Search</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Us Modal -->
+    <div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="aboutModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-custom"> <!-- Add bg-custom class for navbar color -->
+                <div class="modal-header">
+                    <h4 class="modal-title" id="aboutModalLabel" style="color: #712cf9;">About Us</h4> <!-- Set heading color -->
+                    <button type="button" class="btn-close btn-sm" data-bs-dismiss="modal" aria-label="Close"></button> <!-- Make close button smaller -->
+                </div>
+                <div class="modal-body">
+                    <p style="color: black;"><span style="font-size: x-large; font-weight: bold; color: #712cf9;">A</span> navbar, or navigation bar, is a key part of a website's design, usually found at the top of the page. It contains links to different sections or pages, making navigation easy for users. Designing a navbar involves balancing usability, accessibility, and aesthetics. <br> <br> <span style="font-size: x-large; font-weight: bold; color: #712cf9;">It</span> should be intuitive, visually appealing, and offer clear navigation options, often including dropdown menus and search bars to enhance user experience.</p> <!-- Set text color -->
+                    <!-- Add more content here if needed -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button> <!-- Make close button smaller -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="Navbar.js"></script> <!-- Include the script here -->
+</body>
+</html>

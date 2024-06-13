@@ -1,0 +1,51 @@
+.navbar {
+    background-color: #712cf9; /* Sets the navbar background color */
+}
+
+.custom-title {
+    font-size: 1.25rem; /* Sets the font size */
+    line-height: 1.75rem; /* Sets the line height */
+    color: white; /* Sets the purple color */
+    font-weight: 700; /* Makes the title bold */
+}
+
+.navbar .nav-link,
+.navbar .dropdown-toggle,
+.navbar .navbar-toggler-icon {
+    color: white; /* Sets the text color to white */
+    font-weight: normal; /* Makes the text normal weight */
+}
+
+/* Ensures the dropdown menu items are also styled correctly */
+.navbar .dropdown-menu .dropdown-item {
+    color: black; /* Sets the dropdown menu item color to black for readability */
+    font-weight: normal; /* Keeps the dropdown items normal weight for better readability */
+}
+
+.navbar .dropdown-menu .dropdown-item:hover {
+    color: white; /* Changes the dropdown item color to white on hover */
+}
+
+.DocSearch-Button-Container {
+    display: flex;
+    align-items: center;
+    background-color: #712cf9; /* Matches navbar background color */
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.DocSearch-Button-Container:hover {
+    background-color: rgb(137, 197, 131); 
+}
+
+.DocSearch-Search-Icon {
+    margin-right: 5px;
+    stroke: currentColor;
+}
+
+.DocSearch-Button-Placeholder {
+    color: white;
+}
