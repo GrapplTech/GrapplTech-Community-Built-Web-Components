@@ -1,0 +1,276 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+#navbar header{
+    color: whitesmoke;
+    font-weight: 900;
+    margin:15px 0px;
+    margin-left: 10px;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+nav ul li a.active {
+    background-color: #04AA6D;
+}
+
+section {
+    height: 100vh;
+    padding: 60px 20px;
+}
+
+#section1 { background-color: #f4f4f4; }
+#section2 { background-color: #ccc; }
+#section3 { background-color: #999; }
+#section4 { background-color: #666; }
+
+#section1 {
+    background: url(https://images.pexels.com/photos/733856/pexels-photo-733856.jpeg?auto=compress&cs=tinysrgb&w=1540) ;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.home-content h2 {
+    font-size: 48px;
+    color: #a0b5d5;
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    font-size: 18px;
+    color: #9761c9;
+    margin-bottom: 20px;
+}
+
+.home-content button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #ff6347;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.home-content button:hover {
+    background-color: #e55342;
+}
+
+#section2 {
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.about-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.feature:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+.about-features {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.feature {
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px ;
+    background-color: aqua;
+    max-width: 300px;
+}
+
+.feature h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 16px;
+}
+
+#section3 {
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.services-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+ .services-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+ .services-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+ .service-list {
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.service-item {
+   background-color: #9761c9;
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px;
+    max-width: 300px;
+}
+
+ .service-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    color: #efe8e8;
+    font-size: 16px;
+}
+
+
+
+ #section3, #section4 {
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.services-content, .contact-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.services-content h2, .contact-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+ .services-content p, .contact-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+ .service-list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.feature, .service-item {
+    max-width: 300px;
+}
+
+ .service-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 16px;
+}
+
+.contact-content form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #ff6347;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #e55342;
+}
