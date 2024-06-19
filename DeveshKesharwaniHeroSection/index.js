@@ -54,3 +54,35 @@ document.getElementById('contact-form').addEventListener('submit', function(even
         alert('Please fill in all fields.');
     }
 });
+
+
+
+
+// JavaScript to add animation class on scroll
+document.addEventListener('DOMContentLoaded', function() {
+    const features = document.querySelectorAll('#section2 .feature');
+    
+    function checkScroll() {
+        features.forEach(feature => {
+            if (isElementInViewport(feature)) {
+                feature.classList.add('animated');
+            }
+        });
+    }
+    
+    function isElementInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+    
+    // Initial check when the page loads
+    checkScroll();
+    
+    // Check again on scroll
+    window.addEventListener('scroll', checkScroll);
+});

@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+  
 }
 
 nav {
@@ -50,14 +51,18 @@ nav ul li a.active {
 }
 
 section {
-    height: 100vh;
+    /* height: 100vh; */
     padding: 60px 20px;
 }
 
-#section1 { background-color: #f4f4f4; }
-#section2 { background-color: #ccc; }
-#section3 { background-color: #999; }
-#section4 { background-color: #666; }
+#section1 {
+     background-color: #f4f4f4; }
+#section2 {
+     background-color: #ccc; }
+#section3 {
+     background-color: #999; }
+#section4 { 
+    background-color: #666; }
 
 #section1 {
     background: url(https://images.pexels.com/photos/733856/pexels-photo-733856.jpeg?auto=compress&cs=tinysrgb&w=1540) ;
@@ -67,10 +72,29 @@ section {
     align-items: center;
 }
 
+/* Define the animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Optional: slide in from bottom */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply animation to the section */
+#section1  {
+    animation: fadeIn 1s ease-out; /* Adjust timing and easing as needed */
+}
+
+
 .home-content {
+    
     text-align: center;
     background: rgba(0, 0, 0, 0.5);
-    padding: 20px;
+    /* padding: 20px; */
     border-radius: 10px;
 }
 
@@ -90,10 +114,11 @@ section {
     padding: 10px 20px;
     font-size: 16px;
     border: none;
-    background-color: #ff6347;
+    background-color: #6cb0e3;
     color: #fff;
     cursor: pointer;
     border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 .home-content button:hover {
@@ -103,41 +128,57 @@ section {
 #section2 {
     padding: 60px 20px;
     background-color: #fff;
+  /* / background-image: url(https://www.vecteezy.com/photo/36752120-ai-generated-education-poster-template-with-large-copy-space-for-text); */
 }
 
+
+
 .about-content {
+    
+ 
     max-width: 1200px;
+    /* height: 700px; */
     margin: 0 auto;
     text-align: center;
+
+    color: #035f3d;
 }
 
 .about-content h2 {
+    background-color: #04AA6D;
     font-size: 36px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .about-content p {
+    
     font-size: 18px;
     margin-bottom: 20px;
     line-height: 1.6;
 }
 
-.feature:hover {
-    background-color: #f0f0f0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transform: translateY(-5px);
-}
 .about-features {
     display: flex;
     justify-content: space-around;
     margin-top: 40px;
+    gap: 50px;
+    flex-wrap: wrap;
 }
 
 .feature {
+    
     border: 2px solid black;
     box-shadow: 5px 5px 5px ;
-    background-color: aqua;
+    background-color: rgb(137, 122, 200);
     max-width: 300px;
+}
+
+.feature:hover {
+    transition: all;
+    transition-duration: .5s;
+    transform: scale(1.5);
+    background-color: #6cb0e3;
+    cursor: pointer;
 }
 
 .feature h3 {
@@ -149,6 +190,34 @@ section {
     font-size: 16px;
 }
 
+ /* Define the section fade-in animation */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Apply animation to the section */
+        #section {
+            animation: fadeIn 1s ease-out; /* Adjust timing and easing as needed */
+        }
+
+       /* CSS for fade-in animation */
+.feature {
+    opacity: 0;
+    transform: translateY(20px); /* Initially move element down */
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.feature.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
 #section3 {
     padding: 60px 20px;
     background-color: #fff;
@@ -156,13 +225,16 @@ section {
 
 .services-content {
     max-width: 1200px;
+    /* max-width: 1500px;
+    height: 700px; */
     margin: 0 auto;
     text-align: center;
 }
 
  .services-content h2 {
+    background-color: #04AA6D;
     font-size: 36px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
  .services-content p {
@@ -171,6 +243,11 @@ section {
     line-height: 1.6;
 }
 
+ button a{
+    text-decoration: none;
+    color:#1e1e1e;
+    
+ }
  .service-list {
     display: flex;
     gap: 30px;
@@ -178,11 +255,21 @@ section {
     margin-top: 40px;
 }
 
+
+
 .service-item {
+  
    background-color: #9761c9;
     border: 2px solid black;
     box-shadow: 5px 5px 5px;
     max-width: 300px;
+}
+.service-item:hover{
+    background-color: #b583e0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+    transition-duration: .5s;
+    cursor: pointer;
 }
 
  .service-item h3 {
@@ -195,6 +282,9 @@ section {
     font-size: 16px;
 }
 
+.service-item button{
+    background-color: #bbb8e6;
+}
 
 
  #section3, #section4 {
@@ -202,17 +292,20 @@ section {
     background-color: #fff;
 }
 
-.services-content, .contact-content {
+ .contact-content {
     max-width: 1200px;
+    /* max-width: 1500px;
+    height: 600px; */
     margin: 0 auto;
     text-align: center;
 }
-.services-content h2, .contact-content h2 {
+ .contact-content h2 {
+    background-color: #04AA6D;
     font-size: 36px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
- .services-content p, .contact-content p {
+ .contact-content p {
     font-size: 18px;
     margin-bottom: 20px;
     line-height: 1.6;
@@ -222,9 +315,11 @@ section {
     display: flex;
     justify-content: space-around;
     margin-top: 40px;
+    flex-wrap: wrap;
 }
 
-.feature, .service-item {
+ .service-item {
+
     max-width: 300px;
 }
 
@@ -235,6 +330,11 @@ section {
 
 .service-item p {
     font-size: 16px;
+}
+
+#section4{
+    max-height: 560px;
+    /* border: 2px solid black; */
 }
 
 .contact-content form {
@@ -273,4 +373,44 @@ button {
 
 button:hover {
     background-color: #e55342;
+}
+
+
+/* responsive */
+@media (max-width: 768px) {
+  nav{
+    flex-direction: column;
+
+  }
+
+  section{
+    padding: 20px;
+
+  }
+
+  .home-content{
+    flex-direction: column;
+
+  }
+
+  .about-content{
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .services-content{
+    flex-direction: column;
+    flex-wrap: wrap;
+
+  }
+
+  .contact-content{
+    flex-direction: column;
+
+  }
+
+  .about-features{
+    flex-direction: column;
+
+  }
 }
