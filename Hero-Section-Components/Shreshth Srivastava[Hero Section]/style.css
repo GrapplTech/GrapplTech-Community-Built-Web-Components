@@ -1,0 +1,127 @@
+#button1{
+    transition: .2s;
+}
+
+#button1:hover{
+    transform: scale(1.15);
+}
+
+#button2{
+    transition: .2s;
+}
+
+#button2:hover{
+    transform: scale(1.15);
+}
+
+@media( width > 2000px){
+    :root{
+        font-size: 25px;
+    }
+    .Title{
+        left: 5%;
+    }
+   .block-1{
+        top: -100%;
+        right: -10vw;
+        width: 75%;
+    }
+    .block-2{
+        top: 35%;
+        left: -10vw;
+        width: 75%;
+    }
+    .Images{
+        top: 20%;
+        right: 16vw;
+        width: 35vw;
+        height: 60%;
+    }
+    .Images img{
+        height: 15vw;
+    }
+}
+
+@media( 770px < width < 1440px){
+    :root{
+        font-size: 11px;
+    }
+   .block-1{
+        top: -85%;
+        right: 10vw;
+        width: 50%;
+    }
+    .block-2{
+        top: 35%;
+        left: 25vw;
+        width: 50%;
+    }
+    .Images{
+        top: 20%;
+        right: 15vw;
+        width: 35vw;
+        height: 60%;
+    }
+    .Images img{
+        height: 15vw;
+    }
+}
+
+@media( 450px < width < 770px){
+    :root{
+        font-size: 10px;
+    }
+    .Title{
+        top: 60%;
+        left: 5%;
+        width: 50%;
+    }
+   .block-1{
+        top: -100%;
+        right: 5vw;
+        width: 75%;
+    }
+    .block-2{
+        top: 35%;
+        left: 15vw;
+        width: 75%;
+    }
+    .Images{
+        top: 20%;
+        right: 21vw;
+        width: 32vw;
+        height: 50%;
+    }
+    .Images img{
+        height: 20vw;
+    }
+}
+
+@media(width < 450px){
+    :root{
+        font-size: 9px;
+    }
+    .block-1{
+        top: -100%;
+        right: 25%;
+        width: 100%;
+    }
+    .block-2{
+        top: 50%;
+        left: 25%;
+        width: 100%;
+    }
+    .Title{
+        top: 55%;
+        width: 70%;
+    }
+    .Images{
+        top: 10%;
+        right: 25vw;
+        width: 75vw;
+        height: 40%;
+    }
+    .Images img{
+        height: 30vw;
+    }
+}
