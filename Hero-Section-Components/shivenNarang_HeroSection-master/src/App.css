@@ -1,0 +1,69 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.Loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(238, 255, 230);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease-in-out 0.5s;
+    -webkit-transition: ease-in-out;
+    -moz-transition: ease-in-out;
+    -ms-transition: ease-in-out;
+    -o-transition: ease-in-out;
+}
+
+.Spiner {
+    width: 100px;
+    height: 100px;
+    border: 10px solid rgba(22, 175, 22, 0.305);
+    border-top-color: green;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    animation: spiner 5s linear infinite;
+    -webkit-animation: spiner 1s linear infinite;
+}
+
+@keyframes spiner {
+    0% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.loaded {
+    opacity: 0;
+    visibility: none;
+}
+
+.App {
+    height: 100vh;
+    background: url('./assets/bg.jpg') center center;
+}
+
+.title {
+    font-weight: 700;
+    filter: drop-shadow(0 0 20px white);
+    -webkit-filter: drop-shadow(0 0 20px white);
+}
+
+.sub-title {
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
