@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>GrapplTech</title>
+    <link rel="stylesheet" href="CSS/hero-section.css" />
+    <link rel="stylesheet" href="CSS/other.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+
+    <header class="header">
+      <nav class="navbar">
+        <div class="full-logo">
+          <img class="logo" src="Img/G-logo.png" alt="Company Logo" />
+          <span class="logo-name">GrapplTech</span>
+        </div>
+
+        <div class="nav-btn">
+          <a href="#home" class="btn simple home-btn">Home</a>
+          <a href="#info" class="btn simple info-btn">Info</a>
+          <a href="#contact" class="btn simple contact-btn">Contact us</a>
+          <a href="#home" class="btn login-btn">LogIn</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero section -->
+
+    <main>
+      <section id="home" class="section hero-section">
+        <div class="arrow-div">
+          <img class="arrow-gif" src="Img/Arrow.gif" alt="Arrow gif" />
+        </div>
+        <div class="heading-container">
+          <h6 class="heading h6">We Don't Just Code</h6>
+          <h5 class="heading h5">
+            We <span class="grapple-heading">Grapple</span> with Challenges
+          </h5>
+          <p class="paragraph">
+            Unlock your potential in the world of coding with GrapplTech.
+            GrapplTech is your launchpad to a successful career in software
+            development.
+          </p>
+
+          <a href="#info" class="btn learn-more login-btn">Learn more</a>
+        </div>
+
+        <aside>
+          <div class="image-div">
+            <img class="image" src="Img/image.gif" alt="gif" />
+          </div>
+        </aside>
+
+        <img class="down-arrow" src="Img/Down-arrow.png" alt="Down-arrow" />
+      </section>
+
+      <!-- info section -->
+
+      <section id="info" class="section section-accent">
+        <div class="pricing-cards-container">
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <div class="plan-name">Basic</div>
+              <div class="plan-price">1,000</div>
+            </div>
+            <div class="plan-feature">
+              <div class="feature">4 videos Per Month</div>
+              <div class="feature">1 Project Based Video Per Month</div>
+              <div class="feature inactive">Weekly Live Streams</div>
+              <div class="feature inactive">24/7 Email Support</div>
+              <div class="feature inactive">24/7 Phone Support</div>
+              <div class="feature inactive">
+                1 Project Code Review Per Month
+              </div>
+            </div>
+          </div>
+          <div class="pricing-card accent">
+            <div class="pricing-header">
+              <div class="plan-name">Preferred</div>
+              <div class="plan-price">3,000</div>
+            </div>
+            <div class="plan-feature">
+              <div class="feature">6 videos Per Month</div>
+              <div class="feature">2 Project Based Video Per Month</div>
+              <div class="feature">Weekly Live Streams</div>
+              <div class="feature">24/7 Email Support</div>
+              <div class="feature inactive">24/7 Phone Support</div>
+              <div class="feature inactive">
+                1 Project Code Review Per Month
+              </div>
+            </div>
+          </div>
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <div class="plan-name">Pro</div>
+              <div class="plan-price">5,000</div>
+            </div>
+            <div class="plan-feature">
+              <div class="feature">8 videos Per Month</div>
+              <div class="feature">4 Project Based Video Per Month</div>
+              <div class="feature">Weekly Live Streams</div>
+              <div class="feature">24/7 Email Support</div>
+              <div class="feature">24/7 Phone Support</div>
+              <div class="feature">1 Project Code Review Per Month</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact-us section -->
+
+      <section id="contact" class="section contact-section">
+        <h2 class="section-title">Contact us</h2>
+        <form class="form">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" />
+
+          <label for="email">E-mail</label>
+          <input type="email" name="email" id="email" />
+
+          <label for="message">Message</label>
+          <textarea name="message" id="message"></textarea>
+
+          <div class="btn-container">
+            <button type="submit" class="btn send login-btn">Send</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script src="smooth-scroll.js"></script>
+  </body>
+</html>

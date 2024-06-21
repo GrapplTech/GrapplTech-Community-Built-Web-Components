@@ -1,0 +1,7 @@
+
+
+{
+    Full Name: Sumedh Baban Mhaske
+
+    category: Hero Section
+}

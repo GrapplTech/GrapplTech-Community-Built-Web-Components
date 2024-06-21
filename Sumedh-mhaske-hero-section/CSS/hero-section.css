@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Serif", sans-serif;
+}
+
+/* hero section */
+
+.hero-section {
+  height: 100vh;
+}
+
+.full-logo {
+  display: flex;
+  align-items: center;
+  margin-left: -1rem;
+}
+
+.logo {
+  height: 5rem;
+}
+
+.logo-name {
+  margin-left: -0.8rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #0000cd;
+}
+
+.navbar {
+  position: fixed;
+  top: 20px;
+  left: 60px;
+  display: flex;
+  max-width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 1.7rem;
+  z-index: 10;
+}
+
+.nav-btn {
+  margin-left: 500px;
+}
+
+/* Navbar button */
+
+.btn {
+  text-decoration: none;
+  background: none;
+  border: none;
+  margin-right: 3.5rem;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #200e39;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.simple:hover,
+.simple:active {
+  color: #652cb5;
+}
+
+.login-btn {
+  border-radius: 1000px;
+  background-color: #390ca1;
+  color: white;
+  margin-right: -0.8rem;
+  padding: 0.4em 1em;
+  font-size: 1.2rem;
+}
+
+.learn-more {
+  font-size: 1.2rem;
+  padding: 0.5em 1.2em;
+}
+
+.login-btn:hover,
+.login-btn:active {
+  background-color: #4c0fd9;
+}
+
+/* main content */
+
+.arrow-div {
+  position: absolute;
+  top: 9rem;
+  left: 29rem;
+}
+
+.arrow-gif {
+  width: 15rem;
+  transform: scaleY(-1);
+}
+
+.heading-container {
+  position: absolute;
+  padding: 0 10px;
+  left: 10px;
+  top: 12rem;
+  font-size: 3.4rem;
+  margin-left: 4rem;
+}
+
+.h5 {
+  margin-top: -70px;
+}
+
+.grapple-heading {
+  color: #0000cd;
+}
+
+.paragraph {
+  font-size: 1.2rem;
+  max-width: 53%;
+  margin-top: -50px;
+  color: #555;
+}
+
+/* aside image */
+
+.image {
+  position: absolute;
+  top: 64px;
+  width: 50%;
+  z-index: -1;
+}
+
+.image-div {
+  display: flex;
+  justify-content: end;
+}
+
+.down-arrow {
+  height: 80px;
+  position: absolute;
+  bottom: 1rem;
+  width: 50px;
+  left: 50%;
+  transform: translate(50%);
+
+  animation: bounce 1s infinite linear alternate backwards;
+}
+
+/* Down arrow Animation */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
