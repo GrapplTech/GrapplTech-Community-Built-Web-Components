@@ -1,1 +1,2 @@
 This file contains contributors list
+Leyon Benny  HeroSection  https://leyon412.github.io/GrapplTech-Community-Built-Web-Components/ 14-06-24 HTML,CSS,JS
