@@ -62,7 +62,7 @@ body {
 }
 
 .sidebar-menu li a:hover {
-    cursor: progress;
+    cursor: pointer;
 }
 
 .content{

@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white ;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 1;
+}
+
+.sidebar-header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #111;
+}
+
+.sidebar-header h3 {
+    color: white;
+    margin: 0;
+}
+
+.close-btn {
+    font-size: 40px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0px;
+    font: bolder;
+    font-size: medium;
+}
+
+.sidebar-menu li {
+    padding: 8px 8px 8px 32px;
+    text-align: left;
+}
+
+.sidebar-menu li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar-menu li a:hover {
+    cursor: pointer;
+}
+
+.content{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.open-btn {
+    font-size: 20px;
+    cursor: pointer;
+    background: rgb(39, 87, 185);
+    margin: 10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+
+
+}
+.open-btn:hover{
+
+    border: 3px solid black;
+
+}
+
+.main{
+     font-size:xx-large;
+     border:2px solid transparent;
+     margin-left: 130px;
+
+     margin-top: 20px;
+     height: 33%;
+     width: 37%;
+}
+.main h1{
+    color: rgb(13, 39, 144);
+    text-decoration: 4px solid orange underline;
+}
+.main p{
+    color: rgb(26, 180, 26);
+    font-weight: bold;
+    font-size: smaller;
+    font-size: larger;
+}
+
+.main aside{
+     color: grey;
+     font-size: 16px;
+     font: bold;
+}
+
+.main button{
+    background: rgb(40, 99, 217);
+    color: white;
+    font: bold;
+    height: 30px;
+    width: 100px;
+    border-radius: 5%;
+    border: 2px solid transparent;
+}
+ .main button:hover{
+    background-color: rgb(6, 54, 150);
+    cursor: pointer;
+ }
+
+.content {
+    transition: margin-left 0.5s;
+    padding: 16px;
+}
+
+.content2{
+    display: flex;
+    margin-top: 5%;
+    margin-right: 15%;
+}
+
+.content2 img{
+    height: 350px;
+    width: 350px;
+}
+
+
+@media screen and (max-height: 400px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar-menu li {font-size: 8px;}
+    .sidebar-header{font-size: 8px;}
+}
+
+@media screen and (max-width: 400px){
+      .main{ font-size: small; margin-left: auto;}
+      .main button{ margin-top: 5px;}
+      .content2 img { height: 150px; width: 150px;}
+}       
