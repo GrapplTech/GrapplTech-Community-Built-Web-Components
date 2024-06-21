@@ -1,0 +1,152 @@
+/* Info section */
+
+.section-accent {
+  width: 100vw;
+  height: 100vh;
+  background-color: #0af;
+}
+
+.pricing-cards-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 10rem;
+  max-width: 1500px;
+  height: 460px;
+}
+
+.pricing-card {
+  padding: 1.2rem;
+  background-color: #dcf4ff;
+  border: 1.5px solid black;
+  border-radius: 0.3em;
+  margin: 1rem 0;
+
+  transition: transform 100ms;
+}
+
+.pricing-card:hover {
+  transform: scale(1.05);
+}
+
+.pricing-card.accent {
+  background-color: white;
+  margin: 0;
+}
+
+.pricing-card:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: none;
+  transform-origin: right;
+}
+
+.pricing-card:last-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: none;
+  transform-origin: left;
+}
+
+.pricing-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.plan-name {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.plan-price {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.plan-price::after {
+  content: "/mo";
+  color: #777;
+  font-size: 1rem;
+}
+
+.plan-feature {
+  font-size: 1.2rem;
+}
+
+.feature {
+  margin-bottom: 0.5rem;
+}
+
+.feature.inactive {
+  color: #777;
+  text-decoration: line-through;
+}
+
+.feature:last-child {
+  margin-bottom: 0;
+}
+
+/* Form section */
+
+.contact-section {
+  height: 80vh;
+  position: relative;
+  top: 10rem;
+}
+
+.section-title {
+  margin: 0;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: black;
+  text-align: center;
+}
+
+.form {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.form label {
+  color: black;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  margin-top: 0.25rem;
+  margin-bottom: 0.75rem;
+  outline: none;
+  border: 1px solid #1b2522;
+  padding: 1em;
+  border-radius: 0.3em;
+  color: inherit;
+  font-family: inherit;
+  font-size: 15px;
+
+  transition: border 100ms;
+}
+
+.form textarea {
+  resize: vertical;
+  min-height: 100px;
+  max-height: 200px;
+}
+
+.form input:focus,
+.form textarea:focus {
+  border-color: #0af;
+}
+
+.btn-container {
+  text-align: end;
+}
+
+.send {
+  position: relative;
+  right: 1rem;
+  margin-top: 10px;
+  padding: 0.5em 1.2em;
+}
