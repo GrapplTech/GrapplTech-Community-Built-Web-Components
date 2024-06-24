@@ -1,0 +1,271 @@
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+
+                  /* Navbar Css */
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10%;
+    border-bottom: 1px solid #000;
+    z-index: 10;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+nav .logo{
+    width: 220px;
+    cursor: pointer;
+}
+
+.nav-btn{
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    padding: 15px 25px;
+    border: 0;
+    outline: 0;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.nav-btn img{
+    width: 16px;
+    margin-left: 8px;
+}
+
+.nav-btn:hover{
+    background-color: lightcoral;
+    border: 2px solid #000;
+    color: #000;
+}
+
+
+            /* Header Css */
+
+
+.header{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(#eefff9 0%, #ffccc1 49%, #dcdbff 100%);
+    padding: 0 10%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header h1{
+    margin-top: 120px;
+    font-size: 11vw;
+    line-height: 11vw;
+}
+
+.btn-conatiner{
+    margin: 20px 0;
+}
+
+.header button{
+    border: 0;
+    outline: 0;
+    display: inline-flex;
+    align-items: center;
+    font-size: 18px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.btn-call{
+    background: #000;
+    color: #fff;
+    padding: 10px 10px 10px 30px;
+    border-radius: 40px;
+}
+
+.btn-call:hover{
+    background-color: transparent;
+    color:#000;
+    border: 1px solid #000;
+}
+
+.btn-call img{
+    width: 40px;
+    background: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    margin-left: 30px;
+}
+
+.btn-know{
+    background: transparent;
+    text-decoration: underline;
+}
+
+.btn-know img{
+    width: 20px;
+    margin-left: 10px;
+}
+
+.header p{
+    max-width: 460px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.user-img{
+    width: 80%;
+    max-width: 400px;
+    position: absolute;
+    right: 13%;
+    bottom: 0;
+}
+
+
+/* --------ANIMATION STARTS FROM HERE--------- */
+
+.header h1 span{
+    background: linear-gradient(#000, #000);
+    background-repeat: no-repeat;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-size: 0%;
+}
+
+.header h1 span:first-child{
+    animation: textcolor1 2s linear infinite alternate;
+}
+
+.header h1 span:last-child{
+    animation: textcolor2 2s linear infinite alternate;
+}
+
+@keyframes textcolor1 {
+    0%{
+        background-size: 0%;
+    }
+    40%{
+        background-size: 100%;
+    }
+    100%{
+        background-size: 100%;
+    }
+}
+
+@keyframes textcolor2 {
+    0%{
+        background-size: 0%;
+    }
+    40%{
+        background-size: 0%;
+    }
+    100%{
+        background-size: 100%;
+    }
+}
+
+.menu-icon{
+    display: none;
+}
+
+
+/* ---------------Media Queries For Navigation Bar--------- */
+
+@media only screen and (max-width: 600px) {
+    nav ul{
+        position: absolute;
+        width: 100%;
+        background: #000;
+        color: #fff;
+        left: 0;
+        top: 100%;
+        text-align: center;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    .nav-btn{
+        display: none;
+    }
+    nav .logo{
+        width: 150px;
+    }
+    nav ul li{
+        margin: 10px;
+        font-size: 14px;
+    }
+    .menu-icon{
+        display: block;
+        width: 30px;
+    }
+    .show-menu{
+        max-height: 60px;
+    }
+}
+
+
+/* ----------------Media Queries For Header Content----------- */
+
+@media only screen and (max-width:600px) {
+    .header{
+        min-height: auto;
+        padding: 0;
+    }
+    .user-img{
+        width: 100%;
+        right: auto;
+        position: relative;
+        margin-top: 100px;
+    }
+    .header-content{
+        position: absolute;
+        bottom: 0;
+        padding: 0 10%;
+        z-index: 2;
+        padding-bottom: 40px;
+        background: linear-gradient(transparent, #fff);
+    }
+    .btn-conatiner{
+        margin: 5px 0;
+    }
+    .header button{
+        font-size: 15px;
+        margin-right: 10px;
+    }
+    .btn-call{
+        padding: 7px 7px 7px 20px;
+        margin-bottom: 10px;
+    }
+    .btn-call img{
+        width: 30px;
+        padding: 5px;
+        margin-left: 15px;
+    }
+    .btn-know img{
+        width: 10px;
+        margin-left: 5px;
+    }
+    .header h1{
+        font-size: 70px;
+        line-height: 60px;
+        margin-bottom: 20px;
+    }
+}
+
