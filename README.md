@@ -63,12 +63,8 @@ Please add your details to the table below after your pull request has been merg
 
 | Full Name       | Category      | Deployed Link | Date       | Tech Stack Used |
 | --------------- | ------------- | --------------|------------|-----------------|
-| Akhul  | Hero Section | www.example.com   | 19-06-2024 | HTML, CSS, JS   |
+| Reethu Keerthana | Hero Section | https://github.com/ReethuKeerthana/GrapplTech-Community-Built-Web-Components   | 24-06-2024 | HTML, CSS, JS   |
 
-## Example Entry
-| Full Name       | Category      | Deployed Link | Date       | Tech Stack Used |
-| --------------- | ------------- | --------------|------------|-----------------|
-| John Doe        | Hero Section  | [Link](https://example.com) | 15-07-2024 | HTML, CSS, JS   |
 
 ## Note
 - Ensure your code follows the best practices and is well-documented.
