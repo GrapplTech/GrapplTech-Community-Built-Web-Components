@@ -1,1 +1,2 @@
 This file contains list of contributors who successfully completed the task
+sneha Gavale hero-section 

@@ -1,0 +1,146 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#parent{
+    display:flex;
+    justify-content: center;
+    align-items: centre;
+    
+    background-color:cadetblue;
+    color: white;
+}
+/**childOne**/
+.childOne{
+    padding: 50px 50px 50px 60px;
+    margin-left: 70px;
+}
+.childOne h1{
+    font-weight:bolder;
+}
+.childTwo{
+    display:flex;
+    justify-content: center;
+    align-items: centre; 
+    padding: 50px;
+    background-color: cadetblue;
+}
+/**images**/
+.cOne{
+height: 140px;
+width:140px;
+border: 2px solid black;
+border-top-left-radius: 100px;
+border-bottom-left-radius: 100px;
+border-bottom-right-radius: 100px;
+z-index: 1;
+margin-top: 30px;
+position: relative;
+
+}
+.cOne img{
+    height: 100%;
+    width:100%;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+border-bottom-right-radius: 100px;
+    }
+.cTwo{
+    
+    height:250px;
+    width:180px;
+    border:2px solid black;
+    border-top-left-radius: 70px;
+border-bottom-right-radius: 70px;
+border: 2px solid black;
+    }
+    .cTwo img{
+        height: 100%;
+        width:100%;
+        border-top-left-radius: 70px;
+border-bottom-right-radius: 70px;
+
+        }
+.cThree{
+     height: 140px;
+    width:140px;
+    border:2px solid black;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+border-bottom-right-radius: 70px;
+z-index: 1;
+position: relative;
+top:110px;
+right: 30px;
+
+
+     }
+     .cThree img{
+        height: 100%;
+        width:100%;
+        border-top-left-radius: 70px;
+        border-top-right-radius: 70px;
+        border-bottom-right-radius: 70px;
+
+
+        
+        }  
+        button{
+           border-radius: 10px;
+            background-color:bisque;
+            padding: 10px;
+            margin-top: 20px;
+
+        }  
+        /**media quaries**/
+       
+        
+        @media only screen and (max-width: 835px) {
+            #parent{
+
+                flex-direction: column;
+            }
+            .childOne{
+               .childOne{
+               padding-right: 50px;
+               }
+            }
+            button{
+                position:relative;
+                left:50px;
+            }
+            .cTwo{
+                width:250px;
+            }
+            .cOne{
+                position: relative;
+                left:40px;
+            }
+        }
+        @media only screen and (max-width: 576px) {
+            #parent{
+
+                flex-direction: column;
+            }
+            .childOne{
+               .childOne{
+               padding-right: 50px;
+               }
+            }
+                
+            
+          }
+          @media only screen and (max-width: 373px) {
+            .cTwo{
+                width: 1200px;
+            }
+            .cOne{
+                width: 600px;
+            }
+            .cThree{
+                width: 600px;
+            }
+            
+          }
