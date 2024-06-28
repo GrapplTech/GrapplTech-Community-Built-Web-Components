@@ -1,0 +1,125 @@
+.Hero{
+    display: flex;
+    border: none;
+    font-family: "Poppins", sans-serif;
+}
+
+.Section-first{
+    width: 60%;
+    height: 100vh;
+    
+}
+
+.Anchor-tag{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.Anchor-tag a{
+    text-decoration: none;
+    color: wheat;
+    font-weight: 200;
+}
+
+.logo{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.logo span{
+    color: aqua;
+}
+
+
+.Paragraph{
+    background-color: #0000ff;
+    color: white;
+    padding-top: 2.5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom:7%;
+    height: 65%;
+}
+
+h1{
+    font-size: 15px;
+    font-weight: 200;
+    padding-top: 7%;
+}
+
+h2{
+    font-size: 50px;
+}
+
+p{
+    font-size: 20px;
+    font-weight: 200;
+}
+
+button{
+    height: 45px;
+    width: 200px;
+    margin-top: 4%;
+    font-size: 20px;
+    
+}
+
+.Section-second{
+    width: 40%;
+
+}
+
+.img{
+   height: 100vh;
+   width: 100%;
+    
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    
+}
+
+.sec{
+    margin-right: 5%;
+    margin-top: 5%;
+}
+
+.sec h1{
+    font-weight: 500;
+
+}
+
+.sec h2{
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-size: 15px;
+    color: grey;
+
+}
+
+.sec p{
+    font-size: 12px;
+}
+
+.sec i{
+    font-size: 25px;
+}
+
+.first i{
+    color: rgb(52, 43, 216);
+}
+
+.second i{
+    color: rgb(20, 174, 197);
+}
+
+.third i{
+    color: orange;
+}
+
