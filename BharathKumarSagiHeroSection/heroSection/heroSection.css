@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap');
+
+
+body {
+   font-family: Poppins;
+   background-color: #000;
+   height: 100%;
+   color: white;
+   margin: 0;
+   font-size: 14px;
+   font-weight: 500;
+}
+  
+a{
+  text-decoration: none;
+  color: #eee;
+
+}
+a:hover{
+  text-decoration: none;
+  color: #000;
+}
+header{
+  width: 1140px;
+  max-width: 80%;
+  margin: auto;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+}
+header a{
+  margin-right: 40px;
+}
+  
+.logo{
+  width: 70px;
+  cursor: pointer;
+  margin-right: auto;
+  margin-top: 17px;
+  font-size: 25px;
+  font-weight: 800;
+  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.267);
+  color: #e2e2e2;
+}
+
+  /* carousel */
+
+.carousel{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  margin-top: -50px;
+}
+.carousel .list .item{
+  position: absolute;
+  inset: 0 0 0 0;
+} 
+.carousel .list .item img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.carousel .list .item .content{
+  position: absolute;
+  top: 20%;
+  width: 1140px;
+  max-width: 80%;
+  left: 50%;
+  transform: translate(-50%);
+  padding-right: 30%;
+  box-sizing: border-box;
+  color: #fff;
+  text-shadow: 0 5px 10px #0004;
+
+}
+
+.carousel .list .item .content .heading-one,
+.carousel .list .item .content .heading-two{
+  font-weight: bold;
+  font-size: 4em;
+  list-style: 1.3em;
+  line-height: 1.4;
+}
+.carousel .list .item .content .heading-two{
+  color: #f1683a;
+}
+.carousel .list .item .content .description{
+  margin-top: 1rem;
+}
+.carousel .list .item .content .buttons{
+  display: grid;
+  grid-template-columns: repeat(2, 130px);
+  grid-template-rows: 40px;
+  gap: 5px;
+  margin-top: 20px
+}
+.carousel .list .item .content button{
+  border: none;
+  background-color: #eee;
+  letter-spacing: 3px;
+  font-family: Poppins;
+  font-weight: 500;
+}  
+.carousel .list .item .content button:nth-child(2){
+  background-color: transparent;
+  color:#eee;
+  border: 1px solid #eee;
+}
+
+/* thumbnail */
+.thumbnail{
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  width: max-content;
+  z-index: 100;
+  display: flex;
+  gap: 20px;
+}
+.thumbnail .item{
+  width: 150px;
+  height: 220px;
+  flex-shrink: 0;
+  position: relative;
+}
+.thumbnail .item img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.thumbnail .item .content{
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+}
+.thumbnail .item .content .heading-one{
+  font-weight: bold;
+}
+/* arrows */
+.arrows{
+  position: absolute;
+  top: 80%;
+  right: 52%;
+  width: 300px;
+  max-width: 30%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.arrows button{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.77);
+  border: none;
+  font-family: monospace;
+  color: #000000;
+  font-weight: bold;
+  font-size: large;
+  transition:  .5s;
+  z-index: 100;
+}
+.arrows button:hover{
+  background-color: #ffffff1c;
+  color: #000000;
+}
+.carousel .list .item:nth-child(1){
+  z-index: 1;
+}
+.carousel .list .item:nth-child(1) .heading-one,
+.carousel .list .item:nth-child(1) .heading-two,
+.carousel .list .item:nth-child(1) .description,
+.carousel .list .item:nth-child(1) .buttons{
+  transform: translateY(50px);
+  filter: blur(20px);
+  opacity: 0;
+  animation: showContent 0.5s 1s linear 1 forwards;
+}
+@keyframes showContent {
+  to{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
+}
+.carousel .list .item:nth-child(1) .heading-one{
+  animation-delay: 1.2s;
+} 
+.carousel .list .item:nth-child(1) .heading-two{
+  animation-delay: 1.4s;
+} 
+.carousel .list .item:nth-child(1) .description{
+  animation-delay: 1.6s;
+} 
+.carousel .list .item:nth-child(1) .buttons{
+  animation-delay: 1.8s;
+} 
+
+/* effect next click */
+.carousel .list .item:nth-child(1) img{
+  width: 150px;
+  height: 220px;
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
+  border-radius: 20px;
+  animation:  showImage 0.5s linear 1 forwards;
+}
+@keyframes showImage{
+  to{
+       width: 100%;
+       height: 100%;
+       left: 0;
+       bottom: 0;
+       border-radius: 0;
+    }
+}
+.carousel.next .thumbnail .item:nth-child(1){
+  width: 0;
+  overflow: hidden;
+  animation: showThumnail .5s linear 1 forwards;
+}
+@keyframes showThumbnail{
+  to{
+    width: 150px;
+  }
+}
+.carousel.next .thumbnail{
+  transform: translateX(150px);
+  animation: transformThumbnail .5s linear 1 forwards;
+}
+@keyframes transformThumbnail{
+  to{
+     transform: translateX(0);
+  }
+}
+/* effect prev */
+.carousel.prev .list .item:nth-child(2){
+  z-index: 2;
+}
+.carousel.prev .list .item:nth-child(2) img{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation: outImage 0.5s linear 1 forwards;
+}
+@keyframes outImage{
+  to{
+    width: 150px;
+    height: 220px;
+    border-radius: 20px;
+    left: 50%;
+    bottom: 50px;
+  }
+}
+.carousel.prev .thumbnail .item.item:nth-child(1){
+  width: 0;
+  overflow: hidden;
+  opacity: 0;
+  animation: showThumbnail 0.5s linear 1 forwards;
+}
+.carousel.prev .list .item:nth-child(2) .heading-one,
+.carousel.prev .list .item:nth-child(2) .heading-two,
+.carousel.prev .list .item:nth-child(2) .description,
+.carousel.prev .list .item:nth-child(2) .buttons{
+  animation: contentOut 1.5s linear 1 forwards;
+}
+@keyframes contentOut{
+  to{
+    transform: translateY(-150px);
+    filter: blur(20px);
+    opacity: 0;
+  }
+}
+.carousel.next .arrows button,
+.carousel.prev .arrows button{
+  pointer-events: none;
+}
+
+/* time */
+.time{
+  width: 0%;
+  height: 5px;
+  background-color: #f1683a;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+}
+.carousel.next .time,
+.carousel.prev .time{
+  width: 100%;
+  animation: timeRunning 2s linear 1 forwards;
+}
+@keyframes timeRunning{
+  to{
+    width: 0;
+  }
+}
+@keyframes timeRunning{
+  to{
+    width: 0;
+  }
+}
+@media screen and (max-width: 678px) {
+  .carousel .list .item .content{
+    padding-right: 0;
+  }
+  .carousel .list .item .content .heading-one{
+    font-size: 30px;
+  }
+  header a{
+    font-size: 12px;
+    margin-right: 12px;
+    
+  }
+  .logo{
+    width: 30px;
+    font-size: 15px;
+    
+    display: flex;
+    align-items: end;
+  }
+}
