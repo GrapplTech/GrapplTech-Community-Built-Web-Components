@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+ES+Deco:wght@100..400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    cursor: none;
+}
+
+.header {
+    position: fixed;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    padding: 0 60px;
+    z-index: 10;
+}
+
+.header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 0;
+}
+
+.logo a {
+    display: block;
+}
+
+.d-text{
+    color: #000;
+    font-family: "Playwrite ES Deco", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+}
+
+
+.nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.nav li + li {
+    margin-left: 16px;
+}
+
+.nav li a {
+    font-size: 18px;
+    padding: 1px 5px;
+    color: #000;
+    border-radius: 2em;
+    display: block;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    padding: 40px;
+    height: 100vh;
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.hero-image {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-image img {
+    max-width: 35%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.hero-text h1 {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 1;
+    background-color: #f4d03f;
+    background-image: linear-gradient(132deg, #f4d03f 0%, #16a085 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.hero-text h2 {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal; 
+    font-size: 32px;
+    color: #000;
+    display: inline-flex;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 30px;
+    color: #16a085;
+}
+
+.footer-wrapper {
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-nav {
+    display: flex;
+    align-items: center;
+}
+
+.footer-nav li + li {
+    margin-left: 16px;
+}
+
+.footer-nav li a {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: #000;
+    font-size: 14px;
+}
+
+.cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    margin-left: -20px;
+    margin-top: -20px;
+    border-radius: 50%;
+    border: 2px solid #16a085;
+    transition: transform .2s ease-in-out;
+    transform-origin: center center;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.grow, .grow-small {
+    transform: scale(4);
+    background: #fff;
+    mix-blend-mode: difference;
+    border: none;
+}
+
+.grow-small {
+    transform: scale(3);
+}
+
+button {
+    margin-top: 3%;
+    background-color: white;
+    color: black;
+    border-radius: 10em;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 10px 10px;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid black;
+    box-shadow: 0 0 0 0 red;
+}
+  
+button:hover {
+    transform: translateY(-4px) translateX(-2px);
+    box-shadow: 2px 5px 0 0 red;
+}
+  
+button:active {
+    transform: translateY(2px) translateX(1px);
+    box-shadow: 0 0 0 0 red;
+}
+
+@media (max-width: 768px) {
+    .nav ul {
+        
+        flex-direction: column;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 60px);
+        background-color: #fff;
+        align-items: center;
+        /* justify-content: center; */
+        display: none;
+    }
+
+    .nav li a {
+        
+        margin-top: 3rem;
+        font-size: 28px;
+        padding: 1%;
+    }
+    .nav ul.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+        
+    }
+    .hero-text-content{
+        margin-top: 20%;
+        
+    }
+    .hero-text{
+        text-align: center;
+    }
+    .hero-image img{
+        max-width: 60%;
+    }
+}
