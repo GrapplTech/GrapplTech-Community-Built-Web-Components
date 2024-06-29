@@ -1,0 +1,288 @@
+.container {
+  height: 900px;
+  width: 100%;
+  user-select: none;
+  display: flex;
+  background-image: url(/GrapplTech-Community-Built-Web-Components/Hero-Section-Components/BadalShankhdharHeroSectionComponent/sources/r.jpg);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+body {
+  user-select: none;
+
+}
+
+nav {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  gap: 50px;
+  justify-content: start;
+  background: linear-gradient(90deg, rgb(249, 35, 22) 0%, rgb(139, 102, 241) 100%);
+}
+
+a {
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 30px;
+  color: aliceblue;
+}
+
+.logo {
+  text-align: left;
+  margin-left: 65px;
+  margin-top: 5px;
+  width: 250px;
+  display: flex;
+  background-color: rgb(224, 7, 7);
+  height: 110px;
+  border-radius: 5px;
+}
+
+#logo-img {
+  mix-blend-mode: multiply;
+  height: 150px;
+}
+
+h3 {
+  font-size: 30px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.pink {
+  height: 100%;
+  background: linear-gradient(to top, rgb(224, 7, 7) 50%, #f6cb2e 50%);
+  width: 70px;
+  margin-left: -10px;
+}
+
+.pink1 {
+  height: 100%;
+  background: linear-gradient(to bottom, rgb(224, 7, 7) 50%, #f6cb2e 50%);
+  width: 70px;
+  margin-left: 340px;
+  margin-top: -900px;
+}
+
+.red {
+  height: 100%;
+  background-color: rgb(224, 7, 7);
+  width: 400px;
+  transform: skewX(150deg);
+  z-index: -0.5;
+
+}
+
+.left-side {
+  display: flex;
+  width: 40%;
+  height: 100%;
+}
+
+.body-image {
+  border: 20px solid white;
+  border-radius: 50%;
+  height: 400px;
+  width: 400px;
+  margin-top: 30%;
+  margin-left: -430px;
+  z-index: 1;
+}
+
+.right-side {
+  width: 40%;
+  margin-left: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  color: white;
+  font-size: 150px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+span {
+  color: rgb(224, 7, 7);
+}
+
+h2 {
+  color: white;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+.btn {
+  margin-top: 100px;
+  margin-left: 500px;
+  height: 50px;
+  width: 150px;
+  background-color: white;
+  border-radius: 25px;
+  border: 5px solid rgb(224, 7, 7);
+  font-size: 1rem;
+  font-family: sans-serif;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    margin-left: 0;
+    flex-direction: column;
+    width: 100px;
+  }
+
+  #logo-img {
+    height: 50px;
+  }
+
+  h3 {
+    margin-top: -10px;
+  }
+
+  .red {
+    width: 100px;
+    margin-left: -50px;
+    height: 500px;
+  }
+
+  .pink {
+    width: 35px;
+    background: linear-gradient(to top, rgb(224, 7, 7) 60%, #f6cb2e 40%);
+  }
+
+  .pink1 {
+    width: 35px;
+    margin-left: 95px;
+    margin-top: -500px;
+    background: linear-gradient(to top, #f6cb2e 50%, rgb(224, 7, 7) 50%);
+  }
+
+  .body-image {
+    border: 15px solid white;
+    height: 150px;
+    width: 150px;
+    margin-left: -120px;
+    margin-top: 150px;
+  }
+
+  h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-left: -20px;
+    margin-top: 200px;
+  }
+
+  h2 {
+    font-size: 20px;
+    font-weight: 300;
+    margin-left: -50px;
+  }
+
+  .btn {
+    margin-left: -100px;
+    width: 100px;
+    height: 55px;
+    margin-top: 0;
+    margin-left: 30px;
+  }
+
+  .right-side {
+    margin-left: 80px;
+  }
+
+  nav {
+    gap: 30px;
+    justify-content: center;
+    height: 30px;
+  }
+
+  .container {
+    height: 500px;
+    overflow: hidden;
+  }
+
+  a {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 769px) and (max-width:992px) {
+  .red {
+    margin-left: -110px;
+    width: 200px;
+  }
+
+  .pink1 {
+    margin-left: 120px;
+  }
+
+  .body-image {
+    margin-left: -220px;
+    height: 250px;
+    margin-top: 250px;
+  }
+
+  h1 {
+    font-size: 60px;
+    margin-top: 300px;
+    margin-left: -50px;
+  }
+
+  h2 {
+    margin-left: -100px;
+  }
+
+  .btn {
+    margin-top: 0;
+    margin-left: 10px;
+  }
+
+}
+
+@media (min-width: 993px) and (max-width:1500px) {
+  .red {
+    width: 300px;
+    margin-left: -110px;
+  }
+
+  .pink1 {
+    margin-left: 250px;
+  }
+
+  .body-image {
+    height: 300px;
+    width: 300px;
+    margin-left: -300px;
+    margin-top: 250px;
+  }
+
+  .pink {
+    background: linear-gradient(to top, rgb(224, 7, 7) 60%, #f6cb2e 40%);
+  }
+
+  h1 {
+    font-size: 80px;
+    margin-top: 300px;
+    margin-left: -10px;
+  }
+
+  h2 {
+    margin-left: -100px;
+  }
+
+  .btn {
+    margin-top: 0;
+    margin-left: 200px;
+  }
+}
