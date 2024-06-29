@@ -1,0 +1,51 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 600px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+p {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background: #007BFF;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #0056b3;
+}
