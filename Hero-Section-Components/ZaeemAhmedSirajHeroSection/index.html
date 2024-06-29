@@ -10,6 +10,17 @@
             padding: 0;
             font-family: 'Poppins', sans-serif;
         }
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s forwards; /* Animation duration and forwards to keep the end state */
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
         .hero {
             position: relative;
             height: 100vh;
@@ -54,10 +65,14 @@
             margin-left: 10px;
         }
         .nav {
-            float: right;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .nav .dropdown {
+            position: relative;
         }
         .nav a {
-            text-shadow: rgba(0, 0, 0, 0.5);;
+            text-shadow: rgba(0, 0, 0, 0.5);
             margin: 0 15px;
             text-decoration: none;
             color: white;
@@ -69,6 +84,32 @@
         }
         .nav a:hover {
             background-color: #007bff;
+        }
+        .nav .dropdown-content {
+            display: none;
+            width: 100%;
+            border-radius: 20px;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #007bff;
+            min-width: 100px;
+            border-radius: 20px 20px 20px 20x;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .nav .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            border-bottom: 1px solid #004080;
+        }
+        .nav .dropdown-content a:hover {
+            background-color: #004080;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
         }
         .headline {
             font-size: 48px;
@@ -105,7 +146,7 @@
             color: white;
         }
         .tagline-bar {
-            margin-top: 50px;
+            margin-top: 30px;
             font-size: 18px;
             overflow: hidden;
         }
@@ -119,11 +160,12 @@
         }
         .social-icons {
             position: absolute;
+            z-index: 10000;
             bottom: 20px;
             right: 20px;
         }
         .social-icons a {
-            color: white;
+            color: rgb(161, 163, 255);
             margin: 0 10px;
             text-decoration: none;
             transition: color 0.3s ease; /* Smooth transition for color change */
@@ -136,32 +178,70 @@
 <body>
     <div class="hero">
         <div class="overlay"></div>
-        <div class="logo">
+        <div class="logo fade-in-up">
             <img src="logo1.png" alt="GrapplTech Logo">
             <span>GrapplTech</span>
         </div>
-        <div class="content">
-            <div class="nav">
-                <a href="#">Home</a>
-                <a href="#">Services</a>
-                <a href="#">About Us</a>
-                <a href="#">Careers</a>
-                <a href="#">Contact Us</a>
+        <div class="content fade-in-up">
+            <div class="nav fade-in-up">
+                <div class="dropdown">
+                    <a href="#">Home</a>
+                    <div class="dropdown-content">
+                        <a href="#">Submenu 1</a>
+                        <a href="#">Submenu 2</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#">Services</a>
+                    <div class="dropdown-content">
+                        <a href="#">Submenu 1</a>
+                        <a href="#">Submenu 2</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#">About Us</a>
+                    <div class="dropdown-content">
+                        <a href="#">Submenu 1</a>
+                        <a href="#">Submenu 2</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#">Careers</a>
+                    <div class="dropdown-content">
+                        <a href="#">Submenu 1</a>
+                        <a href="#">Submenu 2</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#">Contact Us</a>
+                    <div class="dropdown-content">
+                        <a href="#">Submenu 1</a>
+                        <a href="#">Submenu 2</a>
+                    </div>
+                </div>
             </div>
-            <div class="headline">We Grapple the Perfect Talent, Wherever They Are.</div>
-            <div class="sub-headline">Connecting top-tier IT professionals with businesses worldwide.</div>
-            <div class="cta-buttons">
+            <div class="headline fade-in-up">We Grapple the Perfect Talent, Wherever They Are.</div>
+            <div class="sub-headline fade-in-up">Connecting top-tier IT professionals with businesses worldwide.</div>
+            <div class="cta-buttons fade-in-up">
                 <a href="#" class="btn-primary">Explore Our Services</a>
                 <a href="#" class="btn-secondary">Join Our Network</a>
             </div>
-            <div class="tagline-bar"><p>Software Development | Cybersecurity | Cloud Solutions | AI & Machine Learning | Data Analytics</p></div>
+            <div class="tagline-bar fade-in-up"><p>Software Development | Cybersecurity | Cloud Solutions | AI & Machine Learning | Data Analytics</p></div>
         </div>
-        <div class="social-icons">
+        <div class="social-icons fade-in-up">
             <a href="#">LinkedIn</a>
             <a href="#">Twitter</a>
             <a href="#">Facebook</a>
             <a href="#">Instagram</a>
         </div>
     </div>
+
+    <script>
+        window.addEventListener('load', function() {
+            document.querySelectorAll('.fade-in-up').forEach(function(element, index) {
+                element.style.animationDelay = (index * 0.2) + 's';
+            });
+        });
+    </script>
 </body>
 </html>
