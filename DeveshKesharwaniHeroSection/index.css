@@ -2,17 +2,21 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+
   
 }
 
 nav {
+   
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    background-color: #333;
-    position: fixed;
+    align-items: center;
+    background: linear-gradient(90deg, #4b6cb7, #182848);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 100%;
     top: 0;
+    color: #fff;
+    position:fixed;
     z-index: 1000;
 }
 
@@ -51,18 +55,30 @@ nav ul li a.active {
 }
 
 section {
-    /* height: 100vh; */
+  
     padding: 60px 20px;
+   
 }
 
 #section1 {
-     background-color: #f4f4f4; }
+   
+    /* background-image: linear-gradient(to left, violet, white); */
+}
 #section2 {
-     background-color: #ccc; }
+    background-image: linear-gradient(to left,#8AAAE5, #FFFFFF);
+   
+     
+    }
 #section3 {
-     background-color: #999; }
+    /* background-image: linear-gradient(to right, purple, white); */
+    background-image: linear-gradient(to right,#8AAAE5, #FFFFFF);
+;
+    }
 #section4 { 
-    background-color: #666; }
+    /* background-color: #666;  */
+    background-image: linear-gradient(to left,#8AAAE5, #FFFFFF);
+}
+
 
 #section1 {
     background: url(https://images.pexels.com/photos/733856/pexels-photo-733856.jpeg?auto=compress&cs=tinysrgb&w=1540) ;
@@ -72,7 +88,7 @@ section {
     align-items: center;
 }
 
-/* Define the animation */
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -94,8 +110,16 @@ section {
     
     text-align: center;
     background: rgba(0, 0, 0, 0.5);
-    /* padding: 20px; */
+    padding: 20px;
     border-radius: 10px;
+    
+    border: 5px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(90deg, #5b82db, #182848);
+    box-shadow: 10px 10px 10px  #5b82db;
+
+
 }
 
 .home-content h2 {
@@ -106,7 +130,7 @@ section {
 
 .home-content p {
     font-size: 18px;
-    color: #9761c9;
+    color: #bfa7d5;
     margin-bottom: 20px;
 }
 
@@ -127,7 +151,7 @@ section {
 
 #section2 {
     padding: 60px 20px;
-    background-color: #fff;
+    /* background-color: #fff; */
   /* / background-image: url(https://www.vecteezy.com/photo/36752120-ai-generated-education-poster-template-with-large-copy-space-for-text); */
 }
 
@@ -148,6 +172,7 @@ section {
     background-color: #04AA6D;
     font-size: 36px;
     margin-bottom: 50px;
+    text-shadow: 3px 3px 3px white;
 }
 
 .about-content p {
@@ -155,6 +180,7 @@ section {
     font-size: 18px;
     margin-bottom: 20px;
     line-height: 1.6;
+   
 }
 
 .about-features {
@@ -169,16 +195,23 @@ section {
     
     border: 2px solid black;
     box-shadow: 5px 5px 5px ;
-    background-color: rgb(137, 122, 200);
+    background-color: rgb(200, 195, 217);
     max-width: 300px;
+    border: 5px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(90deg, #c8d6f7, #182848);
 }
 
 .feature:hover {
-    transition: all;
-    transition-duration: .5s;
-    transform: scale(1.5);
-    background-color: #6cb0e3;
+    transition: all ease-in;
+    transition-duration: .2s;
+    transform: scale(5);
+    background-color: #9adac0;
     cursor: pointer;
+   
+
+
 }
 
 .feature h3 {
@@ -220,13 +253,11 @@ section {
 
 #section3 {
     padding: 60px 20px;
-    background-color: #fff;
+    /* background-color: #fff; */
 }
 
 .services-content {
     max-width: 1200px;
-    /* max-width: 1500px;
-    height: 700px; */
     margin: 0 auto;
     text-align: center;
 }
@@ -235,6 +266,7 @@ section {
     background-color: #04AA6D;
     font-size: 36px;
     margin-bottom: 50px;
+    text-shadow: 3px 3px 3px white;
 }
 
  .services-content p {
@@ -290,6 +322,8 @@ section {
  #section3, #section4 {
     padding: 60px 20px;
     background-color: #fff;
+   
+  
 }
 
  .contact-content {
@@ -297,6 +331,7 @@ section {
     /* max-width: 1500px;
     height: 600px; */
     margin: 0 auto;
+  
     text-align: center;
 }
  .contact-content h2 {
@@ -396,7 +431,10 @@ button:hover {
   .about-content{
     flex-direction: column;
     flex-wrap: wrap;
+    margin: auto;
   }
+
+  
 
   .services-content{
     flex-direction: column;
