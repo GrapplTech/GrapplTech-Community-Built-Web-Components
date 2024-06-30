@@ -1,0 +1,25 @@
+.hero-container {
+	display: flex;
+	align-items: center;
+	background-color: #161212;
+	color: #eee2ee;
+	padding: 0 32px;
+	font-family: "Bangers", cursive;
+	margin: 0;
+	height: 90vh;
+}
+
+.Landing-header {
+	font-size: 50px;
+	letter-spacing: 4px;
+	margin: 0;
+	max-width: 50%;
+}
+.typewriter-container {
+	font-size: 34px;
+	letter-spacing: 4px;
+}
+.typing-img {
+	width: 50vh;
+	margin-top: 12px;
+}
