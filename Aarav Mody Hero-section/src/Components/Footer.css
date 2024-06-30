@@ -1,0 +1,70 @@
+footer.container {
+    background-color: #1f1c2c;
+    color: #fff;
+    padding: 40px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer hr {
+    border: none;
+    border-top: 1px solid #928dab;
+    margin-bottom: 20px;
+}
+
+footer .content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .content div {
+    flex: 1;
+    padding: 0 20px;
+}
+
+footer .content h4 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #ff6347;
+}
+
+footer .content ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .content ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    transition: color 0.1s ease;
+    cursor: pointer;
+}
+
+footer .content ul li:hover {
+    color: #ff4500;
+}
+
+footer .content a {
+    color: #ff6347;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .content a:hover {
+    color: #ff4500;
+}
+
+footer .content div div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+footer .content div div span {
+    margin-left: 10px;
+}
+
+footer .logo-img {
+    max-width: 150px;
+    height: auto;
+}
