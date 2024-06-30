@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  line-height: normal;
+  overflow: auto;
+}
+
+:root {
+  /* fonts */
+  --font-barlow: Barlow;
+  --font-inter: Inter;
+
+  /* font sizes */
+  --font-size-11xl: 30px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-lime: #00e200;
+  --color-gray: rgba(255, 255, 255, 0.5);
+}

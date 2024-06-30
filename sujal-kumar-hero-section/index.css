@@ -1,0 +1,303 @@
+.simple-iconsrazer {
+  position: absolute;
+  top: 65px;
+  left: 60px;
+  width: 125px;
+  height: 125px;
+  overflow: hidden;
+  transition: transform .7s ease;
+}
+
+.simple-iconsrazer:hover{
+  cursor: pointer;
+  transform: rotate(360deg);
+}
+
+.desktop-1-child {
+  position: absolute;
+  top: 0;
+  left: 1709px;
+  background: linear-gradient(268.93deg, #000, transparent);
+  width: 850px;
+  height: 1440px;
+}
+.pngegg-1-icon,
+.pngegg-2-icon,
+.pngegg-3-1,
+.pngegg1-1-icon {
+  position: absolute;
+  top: 35px;
+  left: 905px;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+.pngegg-2-icon,
+.pngegg-3-1,
+.pngegg1-1-icon {
+  top: 355px;
+  height: 256.2px;
+}
+.pngegg-3-1,
+.pngegg1-1-icon {
+  top: 701px;
+  left: 900px;
+  height: 243.1px;
+}
+.pngegg1-1-icon {
+  top: 0;
+  left: 0;
+  width: 800px;
+  height: 1017px;
+}
+.pngegg-1-parent {
+  position: absolute;
+  top: 211px;
+  left: 1341px;
+  width: 1155px;
+  height: 1017px;
+}
+.business,
+.home,
+.shop,
+.support {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 120.4px;
+  text-align: center;
+}
+.business,
+.shop,
+.support {
+  left: 685px;
+  width: 164.5px;
+}
+.business,
+.shop {
+  left: 437px;
+  width: 181.7px;
+}
+.shop {
+  left: 226px;
+  width: 105.4px;
+}
+.home-parent {
+  position: absolute;
+  cursor: pointer;
+  top: 91px;
+  left: 492px;
+  width: 849.5px;
+  height: 36px;
+  color: var(--color-gray);
+  font-family: var(--font-inter);
+}
+
+.home:hover, .support:hover, .business:hover, .shop:hover{
+  color: white;
+  font-weight: bold;
+  margin: 2px;
+  border-bottom: 5px solid rgb(4, 228, 34);
+}
+
+.search {
+  position: absolute;
+  top: 0;
+  left: 34px;
+  display: inline-block;
+  width: 164.5px;
+}
+.akar-iconssearch,
+.mingcuteshopping-bag-3-fill-icon {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+}
+.mingcuteshopping-bag-3-fill-icon {
+  top: 9px;
+  left: 310px;
+}
+
+.login {
+  position: absolute;
+  top: 0;
+  left: 220px;
+  display: inline-block;
+  width: 164.5px;
+}
+.search-parent {
+  position: absolute;
+  top: 91px;
+  left: 2107px;
+  width: 384.5px;
+  height: 36px;
+  font-family: var(--font-inter);
+}
+
+.search:hover, .login:hover{
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.razer-kraken-v2 {
+  position: absolute;
+  top: 481px;
+  left: 99px;
+  font-size: 110px;
+  font-weight: 800;
+  display: inline-block;
+  width: 1191px;
+  height: 169px;
+  transition: transform;
+}
+
+.if-esports-is {
+  margin: 0;
+}
+.if-esports-is-container {
+  position: absolute;
+  top: 680px;
+  left: 108px;
+  font-size: 35px;
+  letter-spacing: 0.14em;
+  font-weight: 300;
+  color: #707070;
+  display: inline-block;
+  width: 1191px;
+  height: 169px;
+}
+.material-symbolsstar-icon,
+.material-symbolsstar-icon1 {
+  position: absolute;
+  top: 1079px;
+  left: 108px;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+}
+.material-symbolsstar-icon1 {
+  left: 225px;
+}
+.material-symbolsstar-icon2,
+.material-symbolsstar-icon3,
+.material-symbolsstar-icon4 {
+  position: absolute;
+  top: 1079px;
+  left: 265px;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+}
+.material-symbolsstar-icon3,
+.material-symbolsstar-icon4 {
+  left: 188px;
+}
+.material-symbolsstar-icon4 {
+  left: 148px;
+}
+.for-the-pro-container {
+  position: absolute;
+  top: 327px;
+  left: 99px;
+  font-size: 70px;
+  color: var(--color-lime);
+}
+.reviews,
+.us-19999 {
+  position: absolute;
+  letter-spacing: 0.14em;
+  display: inline-block;
+  width: 339px;
+  height: 74px;
+}
+.reviews {
+  top: 1079px;
+  left: 342px;
+  font-weight: 300;
+}
+.us-19999 {
+  top: 1228px;
+  left: 108px;
+  font-size: 40px;
+}
+.group-child {
+  position: absolute;
+  top: calc(50% - 29.4px);
+  left: calc(50% - 98.3px);
+  border-radius: 50px;
+  background-color: var(--color-lime);
+  width: 196.6px;
+  height: 58.8px;
+}
+
+.pngegg1-1-icon:hover{
+  cursor: pointer;
+  transition: .2s;
+  transform: scale(1.1);
+}
+
+.add-to-cart {
+  position: absolute;
+  top: calc(50% - 11.4px);
+  left: calc(50% - 77.3px);
+  letter-spacing: 0.14em;
+  font-weight: 800;
+  display: inline-block;
+  width: 150px;
+  height: 22px;
+}
+.rectangle-parent {
+  position: absolute;
+  top: calc(50% + 501px);
+  left: calc(50% - 811px);
+  width: 196.6px;
+  height: 58.8px;
+  font-size: 19px;
+}
+
+.add-to-cart:hover {
+  cursor: pointer;
+}
+
+#image {
+  border-bottom: 2px solid transparent;
+  transition: border 0.3s;
+}
+
+#image:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+#image.selected {
+  border-bottom: 5px solid rgb(4, 228, 34);
+}
+
+.v2 {
+  position: absolute;
+  top: 902px;
+  left: 282px;
+  font-size: 450px;
+  font-weight: 800;
+  color: transparent;
+  display: inline-block;
+  width: 892px;
+  height: 638px;
+  -webkit-text-stroke: 7px rgba(0, 226, 0, 0.1);
+}
+.desktop-1 {
+  width: 100%;
+  position: relative;
+  background: radial-gradient(50% 50%at 50% 50%, #262525, #000);
+  height: 1440px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-11xl);
+  color: var(--color-white);
+  font-family: var(--font-barlow);
+}
