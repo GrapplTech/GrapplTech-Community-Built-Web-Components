@@ -1,11 +1,11 @@
 import { useState } from "react";
 import "./App.css";
-import img1 from "./assets/img1.jpeg";
-import img2 from "./assets/img2.jpeg";
-import img3 from "./assets/img3.jpeg";
-import img4 from "./assets/img4.jpeg";
-import img5 from "./assets/img5.jpeg";
-import img6 from "./assets/img6.jpeg";
+import img1 from "./assets/img1.webp";
+import img2 from "./assets/img2.webp";
+import img3 from "./assets/img3.webp";
+import img4 from "./assets/img4.webp";
+import img5 from "./assets/img5.webp";
+import img6 from "./assets/img6.webp";
 import { motion } from "framer-motion";
 // images
 const IMAGES = [
@@ -76,7 +76,7 @@ function App() {
         variants={textAnimation}
         initial="hidden"
         animate="visible"
-        class="mb-4 text-5xl  text-center tracking-tight leading-none text-white md:text-5xl lg:text-8xl dark:text-black z-10 font-yeseva-one 	"
+        className="mb-4 text-5xl  text-center tracking-tight leading-none text-white  lg:text-7xl dark:text-black z-10 font-yeseva-one 	"
       >
         Welcome to Hills & Thrills
       </motion.h1>
@@ -85,7 +85,7 @@ function App() {
         variants={textAnimation}
         initial="hidden"
         animate="visible"
-        class=" text-xl text-center text-white lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400 	z-10 font-quicksand px-5"
+        className=" text-xl text-center text-white lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400 	z-10 font-quicksand px-5"
       >
         Let's hike through the less explored paths of Sahyadri⛰️{" "}
       </motion.p>
@@ -96,7 +96,7 @@ function App() {
         index === activeIndex && (
           <>
             <motion.img
-              key={index}
+            key={value.id}
               src={value.imageSrc}
               className={`h-full w-full object-cover absolute z-0 top-0 ${`object-${value.position}`}`}
               alt={`Monsoon destination ${index + 1}`}
@@ -108,7 +108,7 @@ function App() {
                 duration: 2,
                 ease: [0.56, 0.03, 0.12, 1.04],
               }}
-              loading="eager"
+              loading="lazy"
             />
           </>
         ) 
@@ -120,6 +120,8 @@ function App() {
           setactiveIndex((prev) => (prev === 0 ? IMAGES.length - 1 : prev - 1));
         }}
         className="absolute bottom-0 left-0 z-10 px-6  py-4  rounded-tr-3xl backdrop-blur-md	bg-white/10"
+        name="slider-left"
+        aria-label="slider-left"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -143,6 +145,8 @@ function App() {
         }}
         type="button"
         className="absolute bottom-0 right-0 z-10 px-6  py-4  rounded-tl-3xl backdrop-blur-md	bg-white/10"
+        name="slider-right"
+        aria-label="slider-right"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
