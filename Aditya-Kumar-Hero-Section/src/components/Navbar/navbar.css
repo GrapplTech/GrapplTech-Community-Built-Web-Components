@@ -1,0 +1,33 @@
+.navbar {
+	background: black;
+	height: 5rem;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 12px;
+}
+
+.nav-left {
+	display: flex;
+	align-items: center;
+}
+
+.logo {
+	width: 30px;
+}
+.name {
+	font-weight: 400;
+	font-size: 2rem;
+}
+.navlinks {
+	display: flex;
+	gap: 4px;
+}
+
+.navlinks > li {
+	cursor: pointer;
+	list-style: none;
+	font-weight: 100;
+	padding: 0px 15px;
+}
