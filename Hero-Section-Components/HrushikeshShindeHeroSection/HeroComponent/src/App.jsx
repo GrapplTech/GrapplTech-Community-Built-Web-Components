@@ -70,7 +70,7 @@ function App() {
     },
   };
   return (
-    <div className="h-screen w-full  flex flex-col items-center justify-center relative bg-black overflow-hidden">
+    <div className="h-[100dvh] w-full  flex flex-col items-center justify-center relative bg-black overflow-hidden">
       {/* title */}
       <motion.h1
         variants={textAnimation}
