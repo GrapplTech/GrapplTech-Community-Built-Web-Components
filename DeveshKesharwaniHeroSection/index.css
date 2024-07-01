@@ -1,0 +1,454 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+  
+}
+
+nav {
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #4b6cb7, #182848);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    top: 0;
+    color: #fff;
+    position:fixed;
+    z-index: 1000;
+}
+
+#navbar header{
+    color: whitesmoke;
+    font-weight: 900;
+    margin:15px 0px;
+    margin-left: 10px;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+nav ul li a.active {
+    background-color: #04AA6D;
+}
+
+section {
+  
+    padding: 60px 20px;
+   
+}
+
+#section1 {
+   
+    /* background-image: linear-gradient(to left, violet, white); */
+}
+#section2 {
+    background-image: linear-gradient(to left,#8AAAE5, #FFFFFF);
+   
+     
+    }
+#section3 {
+    /* background-image: linear-gradient(to right, purple, white); */
+    background-image: linear-gradient(to right,#8AAAE5, #FFFFFF);
+;
+    }
+#section4 { 
+    /* background-color: #666;  */
+    background-image: linear-gradient(to left,#8AAAE5, #FFFFFF);
+}
+
+
+#section1 {
+    background: url(https://images.pexels.com/photos/733856/pexels-photo-733856.jpeg?auto=compress&cs=tinysrgb&w=1540) ;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Optional: slide in from bottom */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply animation to the section */
+#section1  {
+    animation: fadeIn 1s ease-out; /* Adjust timing and easing as needed */
+}
+
+
+.home-content {
+    
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    
+    border: 5px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(90deg, #5b82db, #182848);
+    box-shadow: 10px 10px 10px  #5b82db;
+
+
+}
+
+.home-content h2 {
+    font-size: 48px;
+    color: #a0b5d5;
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    font-size: 18px;
+    color: #bfa7d5;
+    margin-bottom: 20px;
+}
+
+.home-content button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #6cb0e3;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.home-content button:hover {
+    background-color: #e55342;
+}
+
+#section2 {
+    padding: 60px 20px;
+    /* background-color: #fff; */
+  /* / background-image: url(https://www.vecteezy.com/photo/36752120-ai-generated-education-poster-template-with-large-copy-space-for-text); */
+}
+
+
+
+.about-content {
+    
+ 
+    max-width: 1200px;
+    /* height: 700px; */
+    margin: 0 auto;
+    text-align: center;
+
+    color: #035f3d;
+}
+
+.about-content h2 {
+    background-color: #04AA6D;
+    font-size: 36px;
+    margin-bottom: 50px;
+    text-shadow: 3px 3px 3px white;
+}
+
+.about-content p {
+    
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+   
+}
+
+.about-features {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px ;
+    background-color: rgb(200, 195, 217);
+    max-width: 300px;
+    border: 5px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(90deg, #c8d6f7, #182848);
+}
+
+.feature:hover {
+    transition: all ease-in;
+    transition-duration: .2s;
+    transform: scale(5);
+    background-color: #9adac0;
+    cursor: pointer;
+   
+
+
+}
+
+.feature h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 16px;
+}
+
+ /* Define the section fade-in animation */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Apply animation to the section */
+        #section {
+            animation: fadeIn 1s ease-out; /* Adjust timing and easing as needed */
+        }
+
+       /* CSS for fade-in animation */
+.feature {
+    opacity: 0;
+    transform: translateY(20px); /* Initially move element down */
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.feature.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+#section3 {
+    padding: 60px 20px;
+    /* background-color: #fff; */
+}
+
+.services-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+ .services-content h2 {
+    background-color: #04AA6D;
+    font-size: 36px;
+    margin-bottom: 50px;
+    text-shadow: 3px 3px 3px white;
+}
+
+ .services-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+ button a{
+    text-decoration: none;
+    color:#1e1e1e;
+    
+ }
+ .service-list {
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+
+
+.service-item {
+  
+   background-color: #9761c9;
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px;
+    max-width: 300px;
+}
+.service-item:hover{
+    background-color: #b583e0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+    transition-duration: .5s;
+    cursor: pointer;
+}
+
+ .service-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    color: #efe8e8;
+    font-size: 16px;
+}
+
+.service-item button{
+    background-color: #bbb8e6;
+}
+
+
+ #section3, #section4 {
+    padding: 60px 20px;
+    background-color: #fff;
+   
+  
+}
+
+ .contact-content {
+    max-width: 1200px;
+    /* max-width: 1500px;
+    height: 600px; */
+    margin: 0 auto;
+  
+    text-align: center;
+}
+ .contact-content h2 {
+    background-color: #04AA6D;
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+ .contact-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+ .service-list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+ .service-item {
+
+    max-width: 300px;
+}
+
+ .service-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 16px;
+}
+
+#section4{
+    max-height: 560px;
+    /* border: 2px solid black; */
+}
+
+.contact-content form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #ff6347;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #e55342;
+}
+
+
+/* responsive */
+@media (max-width: 768px) {
+  nav{
+    flex-direction: column;
+
+  }
+
+  section{
+    padding: 20px;
+
+  }
+
+  .home-content{
+    flex-direction: column;
+
+  }
+
+  .about-content{
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+
+  
+
+  .services-content{
+    flex-direction: column;
+    flex-wrap: wrap;
+
+  }
+
+  .contact-content{
+    flex-direction: column;
+
+  }
+
+  .about-features{
+    flex-direction: column;
+
+  }
+}
